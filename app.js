@@ -2,14 +2,18 @@ import { answers } from './answers.js';
 
 const button = document.getElementById('ask');
 const answer = document.getElementById('answer');
-const question = document.getElementById('question');
+//const question = document.getElementById('question');
 const ballShake = document.getElementById('ball-shake');
 const reset = document.getElementById('reset');
+
+const getRandomNumber = () => {
+    return Math.floor(Math.random() * answers.length);
+};
 
 button.addEventListener('click', () => {
     ballShake.play();
     button.disabled = true;
-    const randomIdx = Math.floor(Math.random() * answers.length);
+    const randomIdx = getRandomNumber();
     answer.textContent = answers[randomIdx];
     document.getElementById('ans-box').classList.remove('shake');
     setInterval(()=> {

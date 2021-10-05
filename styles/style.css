@@ -8,11 +8,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(26, 19, 10);
-    color: rgb(157, 99, 212);
+    color: rgb(255, 255, 255);
+    font-family: 'Birthstone', cursive;
 }
 
 header {
-    margin-top: 100px;
+    margin-top: 20px;
+    font-size: 2rem;
 }
 
 #ans-box {
@@ -31,6 +33,7 @@ header {
     position: absolute;
     top: 45%;
     text-align: center;
+    font-size: 1.4rem;
 }
 
 button {
@@ -59,4 +62,8 @@ button {
     80% { transform: translate(-2px, -2px) rotate(1deg); }
     90% { transform: translate(2px, 4px) rotate(0deg); }
     100% { transform: translate(2px, -4px) rotate(-1deg); }
+  }
+
+  footer {
+      font-size: 1.7rem;
   }
