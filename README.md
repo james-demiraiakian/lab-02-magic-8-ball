@@ -15,7 +15,7 @@
 *randomIdx
 
 ###Events?
-
+*button click
 
 
 ## To Run Cypress Tests
