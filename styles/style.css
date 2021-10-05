@@ -3,4 +3,56 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-image: url(../assets/background.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(26, 19, 10);
+    color: rgb(157, 99, 212);
 }
+
+header {
+    margin-top: 100px;
+}
+
+#ans-box {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    opacity: 100%;
+    background-size: 410px 410px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+#answer {
+    position: absolute;
+    top: 45%;
+    text-align: center;
+}
+
+/* .hidden {
+    display: none;
+} */
+
+.shake {
+    animation: shake 0.5s;
+  
+    animation-iteration-count: 2;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
