@@ -11,27 +11,21 @@ const getRandomNumber = () => {
 };
 
 button.addEventListener('click', () => {
+    answer.classList.add('hidden');
     ballShake.play();
-    button.disabled = true;
+    //button.disabled = true;
     const randomIdx = getRandomNumber();
     answer.textContent = answers[randomIdx];
     document.getElementById('ans-box').classList.remove('shake');
-    setInterval(()=> {
+    setTimeout(()=> {
         document.getElementById('ans-box').classList.add('shake');
     }, 1);
-    setInterval(()=> {
+    setTimeout(()=> {
         document.getElementById('answer').classList.remove('hidden');
-    }, 1500);
+    }, 1600);
 });
 
 reset.addEventListener('click', () => {
-    document.getElementById('answer').classList.add('hidden');
-    answer.textContent = null;
+    answer.classList.add('hidden');
     button.disabled = false;
 });
-
-// if (question.textContent === '') {
-//     answer.textContent = 'Please ask a question';
-// } else {
-//     answer.textContent = answers[randomIdx];
-// }
